@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:order_flutter/client.dart';
+
+import 'order.dart';
 
 class OrderList extends StatelessWidget {
   OrderList({Key key}) : super(key: key);
@@ -12,15 +15,10 @@ class OrderList extends StatelessWidget {
       body: Center(
         child: Column(
           children: <Widget>[
-            Card(
-              child: ListTile(
-                leading: Icon(Icons.assignment_outlined),
-                title: Text('Areia fina'),
-                subtitle: Text(
-                    'Seu Joaquim - 20m3'
-                ),
-              ),
-            ),
+            Order(
+              1,
+              Client(1, 'Wilson das Neves', 'wil@gmail.com', '1499999999'),
+              550.0)
           ],
         ),
       ),
