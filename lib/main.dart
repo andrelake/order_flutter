@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'orderList.dart';
+import 'pages/orderList.page.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: OrderList(),
+      home: OrderListPage(),
     );
   }
 }
