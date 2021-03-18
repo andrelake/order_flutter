@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:order_flutter/components/order.component.dart';
-import 'package:order_flutter/model/client.dart';
+import 'package:order_flutter/model/costumer.dart';
 import 'package:order_flutter/model/order.dart';
+import 'package:order_flutter/pages/orderForm.page.dart';
 
 
 class OrderListPage extends StatelessWidget {
 
   final List<Order> listOfOrders = [
-    Order(1, Client(1, 'Joao', 'joao@gmail.com', '1499999999'), 200.0),
-    Order(2, Client(2, 'Marco', 'marco@gmail.com', '1499999999'), 130.0),
+    Order(1, Costumer(1, 'Joao', 'joao@gmail.com', '1499999999'), 200.0),
+    Order(2, Costumer(2, 'Marco', 'marco@gmail.com', '1499999999'), 130.0),
   ];
 
   @override
@@ -25,7 +26,9 @@ class OrderListPage extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {  },
+        onPressed: () {
+          Navigator.push(context,MaterialPageRoute(builder: (context) => OrderFormPage()),);
+        },
         child: Icon(Icons.add),
       ),
     );

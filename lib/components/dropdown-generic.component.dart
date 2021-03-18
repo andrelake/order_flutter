@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class DropDownClient extends StatefulWidget {
+class DropDownGeneric extends StatefulWidget {
   @override
-  _DropDownClientState createState() => _DropDownClientState();
+  _DropDownGenericState createState() => _DropDownGenericState();
 }
 
-class _DropDownClientState extends State<DropDownClient> {
+class _DropDownGenericState extends State<DropDownGeneric> {
   String dropdownValue = 'One';
 
   @override

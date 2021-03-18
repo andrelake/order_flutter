@@ -12,7 +12,7 @@ class OrderComponent extends StatelessWidget {
     return Card(
       child: ListTile(
         leading: Icon(Icons.assignment_outlined),
-        title: Text(order.orderId.toString() + ' - ' + order.client.name),
+        title: Text(order.orderId.toString() + ' - ' + order.costumer.name),
         subtitle: Text(order.total.toString()),
       ),
     );

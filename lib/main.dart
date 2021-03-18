@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:order_flutter/pages/orderForm.page.dart';
+import 'package:order_flutter/pages/orderList.page.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
-        body: OrderFormPage(),
+        body: OrderListPage(),
       )
     );
   }
